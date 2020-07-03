@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: Roboto,sans-serif;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 4px;
+}
+body{
+    background-color: whitesmoke;
+}
+.content{
+    margin-left: 303px;
+}
+#verPracticaContainer{
+    padding: 15px;
+    margin: auto;
+    margin-top: 100px;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+}
+header{
+    width: 98%;
+    margin: auto;
+    background-color: white;
+    height: 100px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px gray;
+}
+header span{
+    margin-top: 10px;
+}
+aside{
+    
+    box-shadow: 0 0 5px gray;
+    position: fixed;
+    background: white;
+    width: 300px;
+    height: 100%;
+}
+aside ul li{
+    list-style: none;
+    margin: auto;
+    width: 80%;
+    border-bottom: 1px solid whitesmoke;
+    margin-top: 10px;
+    
+    transition: 0.2s ease-in;
+    transform: translateX(-10px);
+}
+aside ul li:hover{
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    transform: translateX(10px);
+}
+#hojaContainer img{
+    margin-top: 30px;
+    height: 1300px;
+}
+
+#parcialTexto{
+    margin-top: 40px;
+    font-size: 32px;
+    font-weight: bold;
+}
+table{
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 15px;
+    border-radius: 2px;
+    border: 1px solid rgb(128, 128, 128);
+}
+.miniaturas{
+    margin-right: 50px;
+    margin-top: 50px;
+    background-color: white;
+    cursor: pointer;
+    padding: 15px;
+    display: inline-block;
+    box-shadow: 0 0 5px gray;
+    transition: 0.2s;
+    transform: scale(1);
+}
+.miniaturas:hover{
+    transition: 0.2s; 
+    transform: scale(1.2);
+}
+.miniaturas img{
+    height: 200px;
+}

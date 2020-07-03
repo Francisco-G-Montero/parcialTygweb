@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
+    <title>Parcial de TyGWeb</title>
+</head>
+<body>
+    <aside>
+        <br>
+        <span id="parcialTexto">PARCIAL TyGWeb</span><br>
+        <ul>
+            <li id="verTeoria" onclick="mostrar(this.id)">Teoría</li>
+            <li id="verPractica" onclick="mostrar(this.id)">Práctica</li>
+        </ul>
+    </aside>
+
+    <section class="content">
+        <header>
+            <span><b>Nombre: </b> Francisco Gabriel</span><br>
+            <span><b>Apellido: </b> Montero</span><br>
+            <span><b>Legajo: </b> 30353</span>
+        </header>
+
+        <div id="verTeoriaContainer">
+            <div id="1" onclick="mostrarHoja(this.id)" class="miniaturas">
+                <img  src="img/hojaParcial1.jpg" alt="">
+            </div>
+            <div  id="2" onclick="mostrarHoja(this.id)" class="miniaturas">
+                <img src="img/hojaParcial2.jpg" alt="">
+            </div>
+            <div id="hojaContainer"></div>
+        </div>
+
+        <div id="verPracticaContainer" hidden>
+            <form>
+                <label for="">Nombre</label>
+                <input id="nombre" type="text" placeholder="Nombre...">
+                <label id="" for="">Apellido</label>
+                <input id="apellido" type="text" placeholder="Apellido...">
+                <br>
+                <br>
+                <label for="">País </label>
+                <select name="" id="pais">
+                    <option value="">Argentina</option>
+                    <option value="">Brasil</option>
+                    <option value="">EEUU</option>
+                </select>
+                <button type="submit" id="agregar">Agregar</button>
+            </form>
+            <br>
+            <table id="tabla">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>País</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
